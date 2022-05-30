@@ -5,10 +5,10 @@
  * @returns 两个数字的最大公约数
  */
 
-export default function gcd(p:number, q:number) {
+export default function gcd(p: number, q: number) {
   if (q == 0) {
     return p
   }
-  let r:number = p % q
+  let r: number = p % q
   return gcd(q, r)
 }

@@ -1,5 +1,5 @@
-import BinarySearch from "./class/binarySeach";
+import selectionSort from './sort/selectionSort'
 
-let staticArray = new BinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+let array: number[] = [5, 6, 7, 2, 4, 9, 3, 8, 15, 15, 35, 15, 435, 43, 5435, 4]
 
-console.log(staticArray.search(8))
+console.log(selectionSort(array))
