@@ -2,7 +2,7 @@ import less from '../method/less'
 import exch from '../method/exch'
 
 /**
- * 使用选择排序对数组进行排序
+ * 选择排序
  * @param array 要进行排序的数组
  * @returns 排序后的数组
  */
@@ -17,5 +17,6 @@ export default function selectionSort<T>(array: T[]): T[] {
     }
     exch(array, i, index)
   }
+
   return array
 }
