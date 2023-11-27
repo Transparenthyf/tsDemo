@@ -24,6 +24,17 @@ export default class Stack<T> {
   }
 
   /**
+   * 访问栈顶元素
+   */
+  public peek(): T {
+    if (this.isEmpty()) {
+      throw new Error('栈为空')
+    } else {
+      return this.array[this.array.length - 1]
+    }
+  }
+
+  /**
    * 队列是否为空
    */
   public isEmpty(): boolean {
@@ -35,16 +46,5 @@ export default class Stack<T> {
    */
   public size(): number {
     return this.array.length
-  }
-
-  /**
-   * 访问栈顶元素
-   */
-  public peek(): T {
-    if (this.isEmpty()) {
-      throw new Error('栈为空')
-    } else {
-      return this.array[this.array.length - 1]
-    }
   }
 }
