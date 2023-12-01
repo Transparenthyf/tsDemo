@@ -1,4 +1,4 @@
-export default class HashMap<T> {
+export default class HashMap {
   /** 键值对数量 */
   private size: number
   /** 哈希表容量 */
