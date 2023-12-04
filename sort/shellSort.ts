@@ -1,5 +1,4 @@
-import less from '../method/less'
-import exch from '../method/exch'
+import exchange from '../method/array/exchange'
 
 /**
  * 希尔排序
@@ -15,8 +14,8 @@ export default function shellSort<T>(array: T[]): T[] {
   }
   while (h >= 1) {
     for (let i = h; i < N; i++) {
-      for (let j = i; j >= h && less(array[j], array[j - h]); j -= h) {
-        exch(array, j, j - h)
+      for (let j = i; j >= h && array[j] < array[j - h]; j -= h) {
+        exchange(array, j, j - h)
       }
     }
     h = Math.floor(h / 3)

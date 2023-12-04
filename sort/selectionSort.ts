@@ -1,5 +1,4 @@
-import less from '../method/less'
-import exch from '../method/exch'
+import exchange from '../method/array/exchange'
 
 /**
  * 选择排序
@@ -11,11 +10,11 @@ export default function selectionSort<T>(array: T[]): T[] {
   for (let i: number = 0; i < array.length; i++) {
     let index: number = i
     for (let j = i; j < array.length; j++) {
-      if (less(array[j], array[index])) {
+      if (array[j] < array[index]) {
         index = j
       }
     }
-    exch(array, i, index)
+    exchange(array, i, index)
   }
 
   return array

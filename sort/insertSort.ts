@@ -1,5 +1,4 @@
-import less from '../method/less'
-import exch from '../method/exch'
+import exchange from '../method/array/exchange'
 
 /**
  * 插入排序
@@ -10,8 +9,8 @@ import exch from '../method/exch'
 export default function insertSort<T>(array: T[]): T[] {
   for (let i = 1; i < array.length; i++) {
     for (let j = i; j > 0; j--) {
-      if (less(array[j], array[j - 1])) {
-        exch(array, j, j - 1)
+      if (array[j] < array[j - 1]) {
+        exchange(array, j, j - 1)
       } else {
         break
       }

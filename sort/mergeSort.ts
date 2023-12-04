@@ -1,6 +1,3 @@
-import less from '../method/less'
-import exch from '../method/exch'
-
 /**
  * 归并排序
  * @param array 要进行排序的数组
@@ -26,16 +23,8 @@ export default function mergeSort<T>(array: T[], start?: number, end?: number): 
   let right: number = mid
 
   for (let i = min; i <= max; i++) {
-    // if (right <= max && less(array[right], array[left])) {
-    //   tmpArray.push(array[right])
-    //   right++
-    // } else if (left < mid) {
-    //   tmpArray.push(array[left])
-    //   left++
-    // }
-
     if (left < mid && right <= max) {
-      if (less(array[right], array[left])) {
+      if (array[right] < array[left]) {
         tmpArray.push(array[right])
         right++
       } else {

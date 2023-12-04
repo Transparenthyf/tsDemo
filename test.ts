@@ -1,18 +1,26 @@
-import hashMap from './class/hashMapClass'
+import BinaryTreeNode from './class/binaryTreeNodeClass'
+import levelOrder from './method/binaryTree/levelOrder'
+import preOrder from './method/binaryTree/preOrder'
+import inOrder from './method/binaryTree/inOrder'
+import postOrder from './method/binaryTree/postOrder'
 
-let myHashMap = new hashMap()
+let binaryTree = new BinaryTreeNode(0)
+let binaryTree1 = new BinaryTreeNode(1)
+let binaryTree2 = new BinaryTreeNode(2)
+let binaryTree3 = new BinaryTreeNode(3)
+let binaryTree4 = new BinaryTreeNode(4)
+let binaryTree5 = new BinaryTreeNode(5)
+let binaryTree6 = new BinaryTreeNode(6)
 
-for (let i = 0; i < 10; i++) {
-  myHashMap.set(i, 'string' + i)
-  myHashMap.delete(i)
-}
+binaryTree.leftNode = binaryTree1
+binaryTree.rightNode = binaryTree2
+binaryTree1.leftNode = binaryTree3
+binaryTree1.rightNode = binaryTree4
+binaryTree2.leftNode = binaryTree5
+binaryTree2.rightNode = binaryTree6
 
-myHashMap.set(1, 'string')
-myHashMap.delete(3)
-myHashMap.set(1, 'string1')
-myHashMap.set(3, 'string3')
-myHashMap.delete(4)
-myHashMap.set(5, 'string5')
-myHashMap.delete(3)
-
-console.log(myHashMap)
+console.log(binaryTree)
+console.log(levelOrder(binaryTree))
+console.log(preOrder(binaryTree))
+console.log(inOrder(binaryTree))
+console.log(postOrder(binaryTree))

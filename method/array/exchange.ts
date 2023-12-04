@@ -5,7 +5,7 @@
  * @param index2 交换元素的索引
  */
 
-export default function exch<T>(array: T[], index1: number, index2: number): void {
+export default function exchange<T>(array: T[], index1: number, index2: number): void {
   let tmp: T = array[index1]
   array[index1] = array[index2]
   array[index2] = tmp
