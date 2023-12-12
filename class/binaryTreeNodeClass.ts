@@ -9,6 +9,13 @@ export default class BinaryTreeNode<T> {
   /** 右节点 */
   rightNode: BinaryTreeNode<T> | null
 
+  /**
+   * 二叉树节点构造函数
+   * @param val 节点的值
+   * @param parentNode 父节点
+   * @param leftNode 左节点
+   * @param rightNode 右节点
+   */
   constructor(
     val: T,
     parentNode?: BinaryTreeNode<T> | null,
