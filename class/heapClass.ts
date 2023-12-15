@@ -1,12 +1,12 @@
 import binaryTreeNode from './binaryTreeNodeClass'
 
-/** 堆 */
+/** 小顶堆 */
 export default class Heap<T> {
   /** 堆的根节点 */
   private root: binaryTreeNode<T>
 
   /**
-   * 堆构造函数
+   * 小顶堆构造函数
    * @param val 根节点的值
    */
   constructor(val: T) {
