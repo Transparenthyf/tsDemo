@@ -76,6 +76,11 @@ export default class Heap<T> {
     return val
   }
 
+  /** 堆的根节点 */
+  getRoot(): binaryTreeNode<T> {
+    return this.root
+  }
+
   /**
    * 交换两个元素
    * @param elementA A 元素
