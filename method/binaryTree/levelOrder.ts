@@ -1,7 +1,7 @@
 import BinaryTreeNode from '../../class/binaryTreeNodeClass'
 
 /** 二叉树的层序遍历 */
-export default function levelOrder<T>(root: BinaryTreeNode<T>) {
+export default function levelOrder<T>(root: BinaryTreeNode<T>): T[] {
   let array: T[] = []
   /** 遍历队列 */
   let queue: BinaryTreeNode<T>[] = [root]
