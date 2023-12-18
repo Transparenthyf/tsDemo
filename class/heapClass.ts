@@ -1,3 +1,4 @@
+import levelOrder from '../method/binaryTree/levelOrder'
 import binaryTreeNode from './binaryTreeNodeClass'
 
 /** 小顶堆 */
@@ -76,9 +77,9 @@ export default class Heap<T> {
     return val
   }
 
-  /** 堆的根节点 */
-  getRoot(): binaryTreeNode<T> {
-    return this.root
+  /** 层序遍历堆返回数组 */
+  toArray(): T[] {
+    return levelOrder(this.root)
   }
 
   /**
