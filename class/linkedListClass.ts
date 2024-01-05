@@ -74,7 +74,7 @@ export default class linkedListClass<T> {
 }
 
 /** 链表节点 */
-class linkedListNodeClass<T> {
+export class linkedListNodeClass<T> {
   val: T
   next: linkedListNodeClass<T> | null
   prev: linkedListNodeClass<T> | null
