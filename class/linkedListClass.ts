@@ -13,7 +13,7 @@ export default class linkedListClass<T> {
    * @param val 节点的值
    * @param targetNode 目标节点
    */
-  insert(val: T, targetNode: linkedListNodeClass<T>) {
+  insert(val: T, targetNode?: linkedListNodeClass<T>) {
     // 如果没有目标节点，将最后一个节点当作目标节点
     let tmpNode = this.root
     while (targetNode === undefined) {
