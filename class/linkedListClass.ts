@@ -40,6 +40,10 @@ export default class linkedListClass<T> {
    * 删除目标节点
    */
   remove(targetNode: linkedListNodeClass<T>) {
+    if (this.length() === 1) {
+      throw new Error('无法删除所有节点')
+    }
+
     if (targetNode.next !== null) {
       targetNode.next.prev = targetNode.prev
     } else {
@@ -72,6 +76,19 @@ export default class linkedListClass<T> {
     }
 
     return targetNode
+  }
+
+  /** 链表节点数量 */
+  length(): number {
+    let tmpNode = this.root
+    let length = 1
+
+    while (tmpNode.next !== null) {
+      length++
+      tmpNode = tmpNode.next
+    }
+
+    return length
   }
 }
 
