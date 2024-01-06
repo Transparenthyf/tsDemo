@@ -27,8 +27,10 @@ export default class linkedListClass<T> {
     let newNode = new linkedListNodeClass(val)
 
     // 将新节点插入链表
-    targetNode.next.prev = newNode
-    newNode.next = targetNode.next
+    if (targetNode.next !== null) {
+      targetNode.next.prev = newNode
+      newNode.next = targetNode.next
+    }
 
     newNode.prev = targetNode
     targetNode.next = newNode
