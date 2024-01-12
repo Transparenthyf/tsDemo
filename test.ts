@@ -1,5 +1,5 @@
-import bubbleSort from './sort/bubbleSort'
+import quickSort from './sort/quickSort'
 
-let array = [2, 3, 5, 7, 3, 5, 8, 2, 9, 4, 3, 2, 7]
+let array = [9, 2, 3, 5, 7, 3, 5, 8, 2, 9, 4, 3, 2, 7]
 
-console.log(bubbleSort(array))
+console.log(quickSort(array))
