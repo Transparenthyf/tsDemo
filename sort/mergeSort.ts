@@ -5,7 +5,6 @@
  * @param end 排序结束索引
  * @returns 排序后的数组
  */
-
 export default function mergeSort<T>(array: T[], start?: number, end?: number): T[] {
   let min: number = typeof start === 'undefined' ? 0 : start
   let max: number = typeof end === 'undefined' ? array.length - 1 : end
