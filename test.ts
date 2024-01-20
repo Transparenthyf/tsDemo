@@ -1,5 +1,5 @@
-import radixSort from './sort/radixSort'
+import bubbleSort from './sort/bubbleSort'
 
-let array = [1, 23, 0, 36, 46, 22, 34, 23, 1, 23254, 12, 3, 13, 23]
+let array = [1, 23, 0, 33456, 43456, 34522, 343425, 23, 1, 23254, 1452, 53, 1353, 23]
 
-console.log(radixSort(array))
+console.log(bubbleSort(array))
