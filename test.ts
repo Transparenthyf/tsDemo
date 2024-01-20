@@ -1,5 +1,5 @@
-import bucketSort from './sort/bucketSort'
+import countingSort from './sort/countingSort'
 
-let array = [0.2, 0.6, 0.4, 0.6, 0.1, 0.6, 0.3, 0.2, 0.8, 0.7, 0]
+let array = [1, 23, 0, 36, 46, 22, 34, 23, 1, 23, 12, 3, 13, 23]
 
-console.log(bucketSort(array))
+console.log(countingSort(array))
