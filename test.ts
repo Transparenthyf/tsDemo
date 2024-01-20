@@ -1,5 +1,5 @@
-import heapSort from './sort/heapSort'
+import bucketSort from './sort/bucketSort'
 
-let array = [9, 2, 3, 5, 7, 3, 5, 8, 2, 9, 4, 3, 2, 7]
+let array = [0.2, 0.6, 0.4, 0.6, 0.1, 0.6, 0.3, 0.2, 0.8, 0.7, 0]
 
-console.log(heapSort(array))
+console.log(bucketSort(array))
