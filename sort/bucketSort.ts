@@ -1,3 +1,5 @@
+import bubbleSort from './bubbleSort'
+
 /**
  * 如何确定要分多少个桶？
  * 如何确定每个桶的区间？
@@ -26,8 +28,8 @@ export default function bucketSort(array: number[]): number[] {
   }
 
   // 桶内排序
-  for (const bucket of buckets) {
-    bucket.sort()
+  for (let bucket of buckets) {
+    bucket = bubbleSort(bucket)
   }
 
   // 依次从桶中去除元素
