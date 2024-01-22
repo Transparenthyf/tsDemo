@@ -1,5 +1,10 @@
-import bubbleSort from './sort/bubbleSort'
+import hanoiTower from './algorithm/hanoiTower'
 
-let array = [1, 23, 0, 33456, 43456, 34522, 343425, 23, 1, 23254, 1452, 53, 1353, 23]
+let a = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+let b = []
+let c = []
 
-console.log(bubbleSort(array))
+hanoiTower(a, b, c)
+console.log('a', a)
+console.log('b', b)
+console.log('c', c)
